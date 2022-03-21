@@ -20,14 +20,14 @@ SOFTWARE.
   <xsl:include href="/org/takes/rs/xe/memory.xsl"/>
   <xsl:include href="/org/takes/rs/xe/millis.xsl"/>
   <xsl:include href="/org/takes/facets/flash/flash.xsl"/>
-  <xsl:include href="/xsl/components.xsl"/>
+  <xsl:include href="/io/surati/gap/web/base/xsl/components.xsl"/>
   <xsl:template match="/page">
     <html lang="fr">
       <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="shortcut icon" href="/img/logo.ico"/>
-        <link rel="stylesheet" href="/css/style.css"/>
+        <link rel="shortcut icon" href="/io/surati/gap/web/base/img/logo.ico"/>
+        <link rel="stylesheet" href="/io/surati/gap/web/base/css/style.css"/>
         <xsl:apply-templates select="." mode="head"/>
       </head>
       <body>

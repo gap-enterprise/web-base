@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<link rel="shortcut icon" href="/img/logo.ico"/>
-<link href="/css/style.css" rel="stylesheet">
-<link href="/css/error-page.css" rel="stylesheet">
+<link rel="shortcut icon" href="/io/surati/gap/web/base/img/logo.ico"/>
+<link href="/io/surati/gap/web/base/css/style.css" rel="stylesheet">
+<link href="/io/surati/gap/web/base/css/error-page.css" rel="stylesheet">
 <div class="page-404">
     <div class="outer">
         <div class="middle">
             <div class="inner">
                 <!--BEGIN CONTENT-->
-                <div class="inner-circle"><img src="/img/logo.png"/><span>500</span></div>
+                <div class="inner-circle"><img src="/io/surati/gap/web/base/img/logo.png"/><span>500</span></div>
                 <span class="inner-status">Oops! Malheureusement, un problème est survenu.</span>
                 <span class="inner-detail">
 	                Veuillez réssayer dans un moment ou contacter votre
