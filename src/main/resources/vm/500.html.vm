@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>GAP - 500 : Erreur du Serveur!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<link rel="shortcut icon" href="/img/logo.ico"/>
+<link href="/css/style.css" rel="stylesheet">
+<link href="/css/error-page.css" rel="stylesheet">
+<div class="page-404">
+    <div class="outer">
+        <div class="middle">
+            <div class="inner">
+                <!--BEGIN CONTENT-->
+                <div class="inner-circle"><img src="/img/logo.png"/><span>500</span></div>
+                <span class="inner-status">Oops! Malheureusement, un problème est survenu.</span>
+                <span class="inner-detail">
+	                Veuillez réssayer dans un moment ou contacter votre
+	                administrateur si le problème persiste.
+	                 <br> <br> 
+                    <a href="/home" class="btn btn-info mtl">
+                     <i class="fa fa-home"></i>
+                         Accueil
+                    </a> 
+                </span>
+                <!--END CONTENT-->
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
