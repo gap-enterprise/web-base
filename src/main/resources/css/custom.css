@@ -1,0 +1,50 @@
+/*!
+ * Customization de CSS ------------------------
+ */
+
+ .hide-display {
+ 	display: none;
+ }
+ .menu-size {
+    font-size: 0.9em !important;
+}
+.app-main .sidebar-shadow {
+	display: none;
+}
+
+ .outer-pad {
+   padding-left: 0 !important;
+ }
+ .inner-pad {
+   padding: 30px 60px 0 !important;
+ }
+ 
+ 
+ /*!
+ * Media CSS
+ */
+@media (max-width: 991.98px){
+	.app-header .app-header__content .app-header-left .nav {
+	    display: none;
+	}
+	
+	.app-main .sidebar-shadow {
+		display: flex;
+	}
+	
+	.popover, .dropdown-menu {
+	  top: 31% !important;
+	}
+	
+	.dropdown-menu-paid {
+	  top: 34% !important;
+	}
+	
+	.dropdown-menu-hist {
+	  top: 29% !important;
+	}
+	
+	.dropdown-menu-right {
+	  top: 26% !important;
+	 }
+}
