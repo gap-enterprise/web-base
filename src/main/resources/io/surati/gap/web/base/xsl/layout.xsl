@@ -45,7 +45,7 @@ SOFTWARE.
             <div class="app-header__logo" style="width: auto;">
               <div class="logo-src1">
                 <a href="/home">
-                  <img src="/img/logo.png" style="height:50px;"/>
+                  <img src="/io/surati/gap/web/base/img/logo.png" style="height:50px;"/>
                 </a>
               </div>
               <div class="header__pane ml-auto hide-display">
@@ -91,7 +91,7 @@ SOFTWARE.
                     <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-rounded dropdown-menu-lg rm-pointers dropdown-menu">
                       <div class="dropdown-menu-header">
                         <div class="dropdown-menu-header-inner bg-success">
-                          <div class="menu-header-image opacity-1" style="background-image: url('/img/abstract.jpg');"/>
+                          <div class="menu-header-image opacity-1" style="background-image: url('/io/surati/gap/web/base/img/abstract.jpg');"/>
                           <div class="menu-header-content text-left">
                             <h5 class="menu-header-title">Paiements</h5>
                             <h6 class="menu-header-subtitle">Effectuer vos paiements</h6>
@@ -128,7 +128,7 @@ SOFTWARE.
                     <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-rounded dropdown-menu-lg rm-pointers dropdown-menu">
                       <div class="dropdown-menu-header">
                         <div class="dropdown-menu-header-inner bg-success">
-                          <div class="menu-header-image opacity-1" style="background-image: url('/img/abstract.jpg');"/>
+                          <div class="menu-header-image opacity-1" style="background-image: url('/io/surati/gap/web/base/img/abstract.jpg');"/>
                           <div class="menu-header-content text-left">
                             <h5 class="menu-header-title">Compte de gestion</h5>
                             <h6 class="menu-header-subtitle">Suivre l'exécution des dépenses</h6>
@@ -167,7 +167,7 @@ SOFTWARE.
                     <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-rounded dropdown-menu-lg rm-pointers dropdown-menu">
                       <div class="dropdown-menu-header">
                         <div class="dropdown-menu-header-inner bg-warning">
-                          <div class="menu-header-image opacity-1" style="background-image: url('/img/abstract.jpg');"/>
+                          <div class="menu-header-image opacity-1" style="background-image: url('/io/surati/gap/web/base/img/abstract.jpg');"/>
                           <div class="menu-header-content text-left">
                             <h5 class="menu-header-title">Historique</h5>
                             <h6 class="menu-header-subtitle">Explorer vos données de production</h6>
@@ -195,7 +195,7 @@ SOFTWARE.
                     <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-rounded dropdown-menu-lg rm-pointers dropdown-menu">
                       <div class="dropdown-menu-header">
                         <div class="dropdown-menu-header-inner bg-info">
-                          <div class="menu-header-image opacity-1" style="background-image: url('/img/abstract.jpg');"/>
+                          <div class="menu-header-image opacity-1" style="background-image: url('/io/surati/gap/web/base/img/abstract.jpg');"/>
                           <div class="menu-header-content text-left">
                             <h5 class="menu-header-title">Paramétrage</h5>
                             <h6 class="menu-header-subtitle">Paramétrer vos données de base</h6>
@@ -225,7 +225,7 @@ SOFTWARE.
                     <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-rounded dropdown-menu-lg rm-pointers dropdown-menu">
                       <div class="dropdown-menu-header">
                         <div class="dropdown-menu-header-inner bg-danger">
-                          <div class="menu-header-image opacity-1" style="background-image: url('/img/abstract.jpg');"/>
+                          <div class="menu-header-image opacity-1" style="background-image: url('/io/surati/gap/web/base/img/abstract.jpg');"/>
                           <div class="menu-header-content text-left">
                             <h5 class="menu-header-title">Administration</h5>
                             <h6 class="menu-header-subtitle">Gérer la sécurité, l'audit, etc.</h6>
