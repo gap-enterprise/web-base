@@ -113,7 +113,7 @@ ul.fancytree-container li.fancytree-lastsib {
 }
 
 ul.fancytree-connectors.fancytree-container li {
-    background-image: url(/../img/vline.gif);
+    background-image: url(/io/surati/gap/web/base/img/vline.gif);
     background-position: 0 0;
 }
 
@@ -142,7 +142,7 @@ span.fancytree-drag-helper-img,
     display: inline-block;
     vertical-align: top;
     background-repeat: no-repeat;
-    background-image: url(/../img/icons.gif);
+    background-image: url(/io/surati/gap/web/base/img/icons.gif);
     background-position: 0px 0px;
 }
 
@@ -198,7 +198,7 @@ span.fancytree-expander {
 
 .fancytree-connectors .fancytree-exp-n span.fancytree-expander,
 .fancytree-connectors .fancytree-exp-nl span.fancytree-expander {
-    background-image: url(/../img/icons.gif);
+    background-image: url(/io/surati/gap/web/base/img/icons.gif);
     margin-top: 0;
 }
 
@@ -441,7 +441,7 @@ span.fancytree-icon {
 .fancytree-statusnode-loading span.fancytree-icon,
 .fancytree-statusnode-loading span.fancytree-icon:hover,
 span.fancytree-icon.fancytree-icon-loading {
-    background-image: url(/../img/loading.gif);
+    background-image: url(/io/surati/gap/web/base/img/loading.gif);
     background-position: 0px 0px;
 }
 
@@ -581,7 +581,7 @@ span.fancytree-drag-source.fancytree-drag-remove {
 .fancytree-container.fancytree-rtl span.fancytree-expander,
 .fancytree-container.fancytree-rtl span.fancytree-icon,
 .fancytree-container.fancytree-rtl span.fancytree-drag-helper-img {
-    background-image: url(/../img/iconsrtl.gif);
+    background-image: url(/io/surati/gap/web/base/img/iconsrtl.gif);
 }
 
 .fancytree-container.fancytree-rtl .fancytree-exp-n span.fancytree-expander,
@@ -591,7 +591,7 @@ span.fancytree-drag-source.fancytree-drag-remove {
 
 .fancytree-container.fancytree-rtl.fancytree-connectors .fancytree-exp-n span.fancytree-expander,
 .fancytree-container.fancytree-rtl.fancytree-connectors .fancytree-exp-nl span.fancytree-expander {
-    background-image: url(../img/iconsrtl.gif);
+    background-image: url(/io/surati/gap/web/base/img/iconsrtl.gif);
 }
 
 ul.fancytree-container.fancytree-rtl ul {
@@ -600,7 +600,7 @@ ul.fancytree-container.fancytree-rtl ul {
 
 ul.fancytree-container.fancytree-rtl.fancytree-connectors li {
     background-position: right 0;
-    background-image: url(/../img/vlinertl.gif);
+    background-image: url(/io/surati/gap/web/base/img/vlinertl.gif);
 }
 
 ul.fancytree-container.fancytree-rtl li.fancytree-lastsib,
@@ -609,7 +609,7 @@ ul.fancytree-container.fancytree-rtl.fancytree-no-connector>li {
 }
 
 #fancytree-drop-marker.fancytree-rtl {
-    background-image: url(/../img/iconsrtl.gif);
+    background-image: url(/io/surati/gap/web/base/img/iconsrtl.gif);
 }
 
 /*------------------------------------------------------------------------------
@@ -11580,7 +11580,7 @@ button,
 .app-header__logo .logo-src {
     height: 23px;
     width: 97px;
-    background: url(/../img/logo.png)
+    background: url(/io/surati/gap/web/base/img/logo.png)
 }
 
 .app-header__menu,
@@ -11818,7 +11818,7 @@ button,
 }
 
 .app-header.header-text-light .app-header__logo .logo-src {
-    background: url(/../img/logo.png)
+    background: url(/io/surati/gap/web/base/img/logo.png)
 }
 
 .app-header.header-text-light .app-header__mobile-menu .hamburger-inner,
@@ -11916,7 +11916,7 @@ button,
 }
 
 .app-header.header-text-dark .app-header__logo .logo-src {
-    background: url(/../img/logo.png)
+    background: url(/io/surati/gap/web/base/img/logo.png)
 }
 
 .app-sidebar {
@@ -12195,7 +12195,7 @@ button,
 }
 
 .app-sidebar.sidebar-text-light .app-header__logo .logo-src {
-    background: url(/../img/logo.png)
+    background: url(/io/surati/gap/web/base/img/logo.png)
 }
 
 .app-sidebar.sidebar-text-light .app-header__logo .hamburger-inner,
@@ -21549,13 +21549,13 @@ legend {
 .app-logo {
     height: 23px;
     width: 97px;
-    background: url(/../img/logo.png)
+    background: url(/io/surati/gap/web/base/img/logo.png)
 }
 
 .app-logo-inverse {
     height: 23px;
     width: 97px;
-    background: url(/../img/logo.png)
+    background: url(/io/surati/gap/web/base/img/logo.png)
 }
 
 .app-login-box .app-logo {
@@ -21894,8 +21894,8 @@ legend {
     font-style: normal;
     font-weight: 900;
     font-display: block;
-    src: url(/../img/FontAwesome.eot);
-    src: url(/../img/FontAwesomed41d.eot?#iefix) format("embedded-opentype"), url(/../img/FontAwesome.woff2) format("woff2"), url(/../img/FontAwesome.woff) format("woff"), url(/../img/FontAwesome.ttf) format("truetype"), url(/../img/FontAwesome.svg#fontawesome) format("svg")
+    src: url(/io/surati/gap/web/base/img/FontAwesome.eot);
+    src: url(/io/surati/gap/web/base/img/FontAwesomed41d.eot?#iefix) format("embedded-opentype"), url(/io/surati/gap/web/base/img/FontAwesome.woff2) format("woff2"), url(/io/surati/gap/web/base/img/FontAwesome.woff) format("woff"), url(/io/surati/gap/web/base/img/FontAwesome.ttf) format("truetype"), url(/io/surati/gap/web/base/img/FontAwesome.svg#fontawesome) format("svg")
 }
 
 .fa,
@@ -27891,8 +27891,8 @@ legend {
 
 @font-face {
     font-family: "Ionicons";
-    src: url(/../img/ionicons.eot);
-    src: url(/../img/ionicons.eot#iefix) format("embedded-opentype"), url(/../img/ionicons.ttf) format("truetype"), url(/../img/ionicons.woff) format("woff"), url(/../img/ionicons.svg#Ionicons) format("svg");
+    src: url(/io/surati/gap/web/base/img/ionicons.eot);
+    src: url(/io/surati/gap/web/base/img/ionicons.eot#iefix) format("embedded-opentype"), url(/io/surati/gap/web/base/img/ionicons.ttf) format("truetype"), url(/io/surati/gap/web/base/img/ionicons.woff) format("woff"), url(/io/surati/gap/web/base/img/ionicons.svg#Ionicons) format("svg");
     font-weight: normal;
     font-style: normal
 }
@@ -31596,1023 +31596,1023 @@ legend {
 }
 
 .AD {
-    background: url(/../img/AD.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/AD.svg) no-repeat
 }
 
 .AE {
-    background: url(/../img/AE.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/AE.svg) no-repeat
 }
 
 .AF {
-    background: url(/../img/AF.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/AF.svg) no-repeat
 }
 
 .AG {
-    background: url(/../img/AG.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/AG.svg) no-repeat
 }
 
 .AI {
-    background: url(/../img/AI.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/AI.svg) no-repeat
 }
 
 .AL {
-    background: url(/../img/AL.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/AL.svg) no-repeat
 }
 
 .AM {
-    background: url(/../img/AM.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/AM.svg) no-repeat
 }
 
 .AO {
-    background: url(/../img/AO.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/AO.svg) no-repeat
 }
 
 .AR {
-    background: url(/../img/AR.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/AR.svg) no-repeat
 }
 
 .AS {
-    background: url(/../img/AS.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/AS.svg) no-repeat
 }
 
 .AT {
-    background: url(/../img/AT.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/AT.svg) no-repeat
 }
 
 .AU {
-    background: url(/../img/AU.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/AU.svg) no-repeat
 }
 
 .AW {
-    background: url(/../img/AW.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/AW.svg) no-repeat
 }
 
 .AX {
-    background: url(/../img/AX.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/AX.svg) no-repeat
 }
 
 .AZ {
-    background: url(/../img/AZ.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/AZ.svg) no-repeat
 }
 
 .BA {
-    background: url(/../img/BA.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/BA.svg) no-repeat
 }
 
 .BB {
-    background: url(/../img/BB.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/BB.svg) no-repeat
 }
 
 .BD {
-    background: url(/../img/BD.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/BD.svg) no-repeat
 }
 
 .BE {
-    background: url(/../img/BE.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/BE.svg) no-repeat
 }
 
 .BF {
-    background: url(/../img/BF.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/BF.svg) no-repeat
 }
 
 .BG {
-    background: url(/../img/BG.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/BG.svg) no-repeat
 }
 
 .BH {
-    background: url(/../img/BH.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/BH.svg) no-repeat
 }
 
 .BI {
-    background: url(/../img/BI.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/BI.svg) no-repeat
 }
 
 .BJ {
-    background: url(/../img/BJ.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/BJ.svg) no-repeat
 }
 
 .BL {
-    background: url(/../img/BL.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/BL.svg) no-repeat
 }
 
 .BM {
-    background: url(/../img/BM.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/BM.svg) no-repeat
 }
 
 .BN {
-    background: url(/../img/BN.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/BN.svg) no-repeat
 }
 
 .BO {
-    background: url(/../img/BO.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/BO.svg) no-repeat
 }
 
 .BR {
-    background: url(/../img/BR.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/BR.svg) no-repeat
 }
 
 .BS {
-    background: url(/../img/BS.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/BS.svg) no-repeat
 }
 
 .BT {
-    background: url(/../img/BT.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/BT.svg) no-repeat
 }
 
 .BV {
-    background: url(/../img/BV.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/BV.svg) no-repeat
 }
 
 .BW {
-    background: url(/../img/BW.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/BW.svg) no-repeat
 }
 
 .BY {
-    background: url(/../img/BY.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/BY.svg) no-repeat
 }
 
 .BZ {
-    background: url(/../img/BZ.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/BZ.svg) no-repeat
 }
 
 .CA {
-    background: url(/../img/CA.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/CA.svg) no-repeat
 }
 
 .CC {
-    background: url(/../img/CC.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/CC.svg) no-repeat
 }
 
 .CD {
-    background: url(/../img/CD.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/CD.svg) no-repeat
 }
 
 .CF {
-    background: url(/../img/CF.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/CF.svg) no-repeat
 }
 
 .CG {
-    background: url(/../img/CG.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/CG.svg) no-repeat
 }
 
 .CH {
-    background: url(/../img/CH.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/CH.svg) no-repeat
 }
 
 .CI {
-    background: url(/../img/CI.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/CI.svg) no-repeat
 }
 
 .CK {
-    background: url(/../img/CK.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/CK.svg) no-repeat
 }
 
 .CL {
-    background: url(/../img/CL.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/CL.svg) no-repeat
 }
 
 .CM {
-    background: url(/../img/CM.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/CM.svg) no-repeat
 }
 
 .CN {
-    background: url(/../img/CN.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/CN.svg) no-repeat
 }
 
 .CO {
-    background: url(/../img/CO.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/CO.svg) no-repeat
 }
 
 .CR {
-    background: url(/../img/CR.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/CR.svg) no-repeat
 }
 
 .CU {
-    background: url(/../img/CU.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/CU.svg) no-repeat
 }
 
 .CV {
-    background: url(/../img/CV.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/CV.svg) no-repeat
 }
 
 .CW {
-    background: url(/../img/CW.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/CW.svg) no-repeat
 }
 
 .CX {
-    background: url(/../img/CX.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/CX.svg) no-repeat
 }
 
 .CY {
-    background: url(/../img/CY.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/CY.svg) no-repeat
 }
 
 .CZ {
-    background: url(/../img/CZ.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/CZ.svg) no-repeat
 }
 
 .DE {
-    background: url(/../img/DE.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/DE.svg) no-repeat
 }
 
 .DJ {
-    background: url(/../img/DJ.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/DJ.svg) no-repeat
 }
 
 .DK {
-    background: url(/../img/DK.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/DK.svg) no-repeat
 }
 
 .DM {
-    background: url(/../img/DM.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/DM.svg) no-repeat
 }
 
 .DO {
-    background: url(/../img/DO.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/DO.svg) no-repeat
 }
 
 .DZ {
-    background: url(/../img/DZ.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/DZ.svg) no-repeat
 }
 
 .EC {
-    background: url(/../img/EC.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/EC.svg) no-repeat
 }
 
 .EE {
-    background: url(/../img/EE.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/EE.svg) no-repeat
 }
 
 .EG {
-    background: url(/../img/EG.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/EG.svg) no-repeat
 }
 
 .ER {
-    background: url(/../img/ER.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/ER.svg) no-repeat
 }
 
 .ES {
-    background: url(/../img/ES.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/ES.svg) no-repeat
 }
 
 .ET {
-    background: url(/../img/ET.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/ET.svg) no-repeat
 }
 
 .EU {
-    background: url(/../img/EU.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/EU.svg) no-repeat
 }
 
 .FI {
-    background: url(/../img/FI.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/FI.svg) no-repeat
 }
 
 .FJ {
-    background: url(/../img/FJ.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/FJ.svg) no-repeat
 }
 
 .FK {
-    background: url(/../img/FK.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/FK.svg) no-repeat
 }
 
 .FM {
-    background: url(/../img/FM.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/FM.svg) no-repeat
 }
 
 .FO {
-    background: url(/../img/FO.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/FO.svg) no-repeat
 }
 
 .FR {
-    background: url(/../img/FR.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/FR.svg) no-repeat
 }
 
 .GA {
-    background: url(/../img/GA.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/GA.svg) no-repeat
 }
 
 .GB-ENG {
-    background: url(/../img/GB-ENG.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/GB-ENG.svg) no-repeat
 }
 
 .GB-NIR {
-    background: url(/../img/GB-NIR.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/GB-NIR.svg) no-repeat
 }
 
 .GB-SCT {
-    background: url(/../img/GB-SCT.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/GB-SCT.svg) no-repeat
 }
 
 .GB-WLS {
-    background: url(/../img/GB-WLS.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/GB-WLS.svg) no-repeat
 }
 
 .GB-ZET {
-    background: url(/../img/GB-ZET.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/GB-ZET.svg) no-repeat
 }
 
 .GB {
-    background: url(/../img/GB.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/GB.svg) no-repeat
 }
 
 .GD {
-    background: url(/../img/GD.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/GD.svg) no-repeat
 }
 
 .GE {
-    background: url(/../img/GE.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/GE.svg) no-repeat
 }
 
 .GF {
-    background: url(/../img/GF.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/GF.svg) no-repeat
 }
 
 .GG {
-    background: url(/../img/GG.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/GG.svg) no-repeat
 }
 
 .GH {
-    background: url(/../img/GH.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/GH.svg) no-repeat
 }
 
 .GI {
-    background: url(/../img/GI.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/GI.svg) no-repeat
 }
 
 .GL {
-    background: url(/../img/GL.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/GL.svg) no-repeat
 }
 
 .GM {
-    background: url(/../img/GM.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/GM.svg) no-repeat
 }
 
 .GN {
-    background: url(/../img/GN.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/GN.svg) no-repeat
 }
 
 .GP {
-    background: url(/../img/GP.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/GP.svg) no-repeat
 }
 
 .GQ {
-    background: url(/../img/GQ.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/GQ.svg) no-repeat
 }
 
 .GR {
-    background: url(/../img/GR.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/GR.svg) no-repeat
 }
 
 .GS {
-    background: url(/../img/GS.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/GS.svg) no-repeat
 }
 
 .GT {
-    background: url(/../img/GT.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/GT.svg) no-repeat
 }
 
 .GU {
-    background: url(/../img/GU.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/GU.svg) no-repeat
 }
 
 .GW {
-    background: url(/../img/GW.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/GW.svg) no-repeat
 }
 
 .GY {
-    background: url(/../img/GY.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/GY.svg) no-repeat
 }
 
 .HK {
-    background: url(/../img/HK.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/HK.svg) no-repeat
 }
 
 .HM {
-    background: url(/../img/HM.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/HM.svg) no-repeat
 }
 
 .HN {
-    background: url(/../img/HN.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/HN.svg) no-repeat
 }
 
 .HR {
-    background: url(/../img/HR.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/HR.svg) no-repeat
 }
 
 .HT {
-    background: url(/../img/HT.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/HT.svg) no-repeat
 }
 
 .HU {
-    background: url(/../img/HU.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/HU.svg) no-repeat
 }
 
 .ID {
-    background: url(/../img/ID.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/ID.svg) no-repeat
 }
 
 .IE {
-    background: url(/../img/IE.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/IE.svg) no-repeat
 }
 
 .IL {
-    background: url(/../img/IL.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/IL.svg) no-repeat
 }
 
 .IM {
-    background: url(/../img/IM.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/IM.svg) no-repeat
 }
 
 .IN {
-    background: url(/../img/IN.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/IN.svg) no-repeat
 }
 
 .IO {
-    background: url(/../img/IO.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/IO.svg) no-repeat
 }
 
 .IQ {
-    background: url(/../img/IQ.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/IQ.svg) no-repeat
 }
 
 .IR {
-    background: url(/../img/IR.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/IR.svg) no-repeat
 }
 
 .IS {
-    background: url(/../img/IS.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/IS.svg) no-repeat
 }
 
 .IT {
-    background: url(/../img/IT.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/IT.svg) no-repeat
 }
 
 .JE {
-    background: url(/../img/JE.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/JE.svg) no-repeat
 }
 
 .JM {
-    background: url(/../img/JM.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/JM.svg) no-repeat
 }
 
 .JO {
-    background: url(/../img/JO.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/JO.svg) no-repeat
 }
 
 .JP {
-    background: url(/../img/JP.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/JP.svg) no-repeat
 }
 
 .KE {
-    background: url(/../img/KE.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/KE.svg) no-repeat
 }
 
 .KG {
-    background: url(/../img/KG.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/KG.svg) no-repeat
 }
 
 .KH {
-    background: url(/../img/KH.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/KH.svg) no-repeat
 }
 
 .KI {
-    background: url(/../img/KI.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/KI.svg) no-repeat
 }
 
 .KM {
-    background: url(/../img/KM.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/KM.svg) no-repeat
 }
 
 .KN {
-    background: url(/../img/KN.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/KN.svg) no-repeat
 }
 
 .KP {
-    background: url(/../img/KP.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/KP.svg) no-repeat
 }
 
 .KR {
-    background: url(/../img/KR.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/KR.svg) no-repeat
 }
 
 .KW {
-    background: url(/../img/KW.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/KW.svg) no-repeat
 }
 
 .KY {
-    background: url(/../img/KY.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/KY.svg) no-repeat
 }
 
 .KZ {
-    background: url(/../img/KZ.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/KZ.svg) no-repeat
 }
 
 .LA {
-    background: url(/../img/LA.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/LA.svg) no-repeat
 }
 
 .LB {
-    background: url(/../img/LB.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/LB.svg) no-repeat
 }
 
 .LC {
-    background: url(/../img/LC.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/LC.svg) no-repeat
 }
 
 .LGBT {
-    background: url(/../img/LGBT.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/LGBT.svg) no-repeat
 }
 
 .LI {
-    background: url(/../img/LI.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/LI.svg) no-repeat
 }
 
 .LK {
-    background: url(/../img/LK.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/LK.svg) no-repeat
 }
 
 .LR {
-    background: url(/../img/LR.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/LR.svg) no-repeat
 }
 
 .LS {
-    background: url(/../img/LS.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/LS.svg) no-repeat
 }
 
 .LT {
-    background: url(/../img/LT.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/LT.svg) no-repeat
 }
 
 .LU {
-    background: url(/../img/LU.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/LU.svg) no-repeat
 }
 
 .LV {
-    background: url(/../img/LV.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/LV.svg) no-repeat
 }
 
 .LY {
-    background: url(/../img/LY.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/LY.svg) no-repeat
 }
 
 .MA {
-    background: url(/../img/MA.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/MA.svg) no-repeat
 }
 
 .MC {
-    background: url(/../img/MC.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/MC.svg) no-repeat
 }
 
 .MD {
-    background: url(/../img/MD.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/MD.svg) no-repeat
 }
 
 .ME {
-    background: url(/../img/ME.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/ME.svg) no-repeat
 }
 
 .MF {
-    background: url(/../img/MF.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/MF.svg) no-repeat
 }
 
 .MG {
-    background: url(/../img/MG.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/MG.svg) no-repeat
 }
 
 .MH {
-    background: url(/../img/MH.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/MH.svg) no-repeat
 }
 
 .MK {
-    background: url(/../img/MK.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/MK.svg) no-repeat
 }
 
 .ML {
-    background: url(/../img/ML.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/ML.svg) no-repeat
 }
 
 .MM {
-    background: url(/../img/MM.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/MM.svg) no-repeat
 }
 
 .MN {
-    background: url(/../img/MN.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/MN.svg) no-repeat
 }
 
 .MO {
-    background: url(/../img/MO.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/MO.svg) no-repeat
 }
 
 .MP {
-    background: url(/../img/MP.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/MP.svg) no-repeat
 }
 
 .MQ {
-    background: url(/../img/MQ.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/MQ.svg) no-repeat
 }
 
 .MR {
-    background: url(/../img/MR.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/MR.svg) no-repeat
 }
 
 .MS {
-    background: url(/../img/MS.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/MS.svg) no-repeat
 }
 
 .MT {
-    background: url(/../img/MT.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/MT.svg) no-repeat
 }
 
 .MU {
-    background: url(/../img/MU.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/MU.svg) no-repeat
 }
 
 .MV {
-    background: url(/../img/MV.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/MV.svg) no-repeat
 }
 
 .MW {
-    background: url(/../img/MW.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/MW.svg) no-repeat
 }
 
 .MX {
-    background: url(/../img/MX.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/MX.svg) no-repeat
 }
 
 .MY {
-    background: url(/../img/MY.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/MY.svg) no-repeat
 }
 
 .MZ {
-    background: url(/../img/MZ.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/MZ.svg) no-repeat
 }
 
 .NA {
-    background: url(/../img/NA.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/NA.svg) no-repeat
 }
 
 .NC {
-    background: url(/../img/NC.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/NC.svg) no-repeat
 }
 
 .NE {
-    background: url(/../img/NE.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/NE.svg) no-repeat
 }
 
 .NF {
-    background: url(/../img/NF.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/NF.svg) no-repeat
 }
 
 .NG {
-    background: url(/../img/NG.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/NG.svg) no-repeat
 }
 
 .NI {
-    background: url(/../img/NI.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/NI.svg) no-repeat
 }
 
 .NL {
-    background: url(/../img/NL.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/NL.svg) no-repeat
 }
 
 .NO {
-    background: url(/../img/NO.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/NO.svg) no-repeat
 }
 
 .NP {
-    background: url(/../img/NP.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/NP.svg) no-repeat
 }
 
 .NR {
-    background: url(/../img/NR.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/NR.svg) no-repeat
 }
 
 .NU {
-    background: url(/../img/NU.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/NU.svg) no-repeat
 }
 
 .NZ {
-    background: url(/../img/NZ.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/NZ.svg) no-repeat
 }
 
 .OM {
-    background: url(/../img/OM.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/OM.svg) no-repeat
 }
 
 .PA {
-    background: url(/../img/PA.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/PA.svg) no-repeat
 }
 
 .PE {
-    background: url(/../img/PE.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/PE.svg) no-repeat
 }
 
 .PF {
-    background: url(/../img/PF.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/PF.svg) no-repeat
 }
 
 .PG {
-    background: url(/../img/PG.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/PG.svg) no-repeat
 }
 
 .PH {
-    background: url(/../img/PH.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/PH.svg) no-repeat
 }
 
 .PK {
-    background: url(/../img/PK.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/PK.svg) no-repeat
 }
 
 .PL {
-    background: url(/../img/PL.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/PL.svg) no-repeat
 }
 
 .PM {
-    background: url(/../img/PM.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/PM.svg) no-repeat
 }
 
 .PN {
-    background: url(/../img/PN.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/PN.svg) no-repeat
 }
 
 .PR {
-    background: url(/../img/PR.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/PR.svg) no-repeat
 }
 
 .PS {
-    background: url(/../img/PS.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/PS.svg) no-repeat
 }
 
 .PT {
-    background: url(/../img/PT.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/PT.svg) no-repeat
 }
 
 .PW {
-    background: url(/../img/PW.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/PW.svg) no-repeat
 }
 
 .PY {
-    background: url(/../img/PY.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/PY.svg) no-repeat
 }
 
 .QA {
-    background: url(/../img/QA.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/QA.svg) no-repeat
 }
 
 .RE {
-    background: url(/../img/RE.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/RE.svg) no-repeat
 }
 
 .RO {
-    background: url(/../img/RO.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/RO.svg) no-repeat
 }
 
 .RS {
-    background: url(/../img/RS.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/RS.svg) no-repeat
 }
 
 .RU {
-    background: url(/../img/RU.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/RU.svg) no-repeat
 }
 
 .RW {
-    background: url(/../img/RW.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/RW.svg) no-repeat
 }
 
 .SA {
-    background: url(/../img/SA.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/SA.svg) no-repeat
 }
 
 .SB {
-    background: url(/../img/SB.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/SB.svg) no-repeat
 }
 
 .SC {
-    background: url(/../img/SC.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/SC.svg) no-repeat
 }
 
 .SD {
-    background: url(/../img/SD.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/SD.svg) no-repeat
 }
 
 .SE {
-    background: url(/../img/SE.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/SE.svg) no-repeat
 }
 
 .SG {
-    background: url(/../img/SG.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/SG.svg) no-repeat
 }
 
 .SH {
-    background: url(/../img/SH.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/SH.svg) no-repeat
 }
 
 .SI {
-    background: url(/../img/SI.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/SI.svg) no-repeat
 }
 
 .SJ {
-    background: url(/../img/SJ.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/SJ.svg) no-repeat
 }
 
 .SK {
-    background: url(/../img/SK.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/SK.svg) no-repeat
 }
 
 .SL {
-    background: url(/../img/SL.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/SL.svg) no-repeat
 }
 
 .SM {
-    background: url(/../img/SM.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/SM.svg) no-repeat
 }
 
 .SN {
-    background: url(/../img/SN.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/SN.svg) no-repeat
 }
 
 .SO {
-    background: url(/../img/SO.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/SO.svg) no-repeat
 }
 
 .SR {
-    background: url(/../img/SR.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/SR.svg) no-repeat
 }
 
 .SS {
-    background: url(/../img/SS.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/SS.svg) no-repeat
 }
 
 .ST {
-    background: url(/../img/ST.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/ST.svg) no-repeat
 }
 
 .SV {
-    background: url(/../img/SV.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/SV.svg) no-repeat
 }
 
 .SX {
-    background: url(/../img/SX.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/SX.svg) no-repeat
 }
 
 .SY {
-    background: url(/../img/SY.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/SY.svg) no-repeat
 }
 
 .SZ {
-    background: url(/../img/SZ.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/SZ.svg) no-repeat
 }
 
 .TC {
-    background: url(/../img/TC.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/TC.svg) no-repeat
 }
 
 .TD {
-    background: url(/../img/TD.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/TD.svg) no-repeat
 }
 
 .TF {
-    background: url(/../img/TF.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/TF.svg) no-repeat
 }
 
 .TG {
-    background: url(/../img/TG.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/TG.svg) no-repeat
 }
 
 .TH {
-    background: url(/../img/TH.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/TH.svg) no-repeat
 }
 
 .TJ {
-    background: url(/../img/TJ.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/TJ.svg) no-repeat
 }
 
 .TK {
-    background: url(/../img/TK.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/TK.svg) no-repeat
 }
 
 .TL {
-    background: url(/../img/TL.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/TL.svg) no-repeat
 }
 
 .TM {
-    background: url(/../img/TM.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/TM.svg) no-repeat
 }
 
 .TN {
-    background: url(/../img/TN.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/TN.svg) no-repeat
 }
 
 .TO {
-    background: url(/../img/TO.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/TO.svg) no-repeat
 }
 
 .TR {
-    background: url(/../img/TR.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/TR.svg) no-repeat
 }
 
 .TT {
-    background: url(/../img/TT.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/TT.svg) no-repeat
 }
 
 .TV {
-    background: url(/../img/TV.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/TV.svg) no-repeat
 }
 
 .TW {
-    background: url(/../img/TW.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/TW.svg) no-repeat
 }
 
 .TZ {
-    background: url(/../img/TZ.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/TZ.svg) no-repeat
 }
 
 .UA {
-    background: url(/../img/UA.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/UA.svg) no-repeat
 }
 
 .UG {
-    background: url(/../img/UG.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/UG.svg) no-repeat
 }
 
 .UM {
-    background: url(/../img/UM.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/UM.svg) no-repeat
 }
 
 .US-CA {
-    background: url(/../img/US-CA.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/US-CA.svg) no-repeat
 }
 
 .US {
-    background: url(/../img/US.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/US.svg) no-repeat
 }
 
 .UY {
-    background: url(/../img/UY.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/UY.svg) no-repeat
 }
 
 .UZ {
-    background: url(/../img/UZ.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/UZ.svg) no-repeat
 }
 
 .VA {
-    background: url(/../img/VA.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/VA.svg) no-repeat
 }
 
 .VC {
-    background: url(/../img/VC.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/VC.svg) no-repeat
 }
 
 .VE {
-    background: url(/../img/VE.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/VE.svg) no-repeat
 }
 
 .VG {
-    background: url(/../img/VG.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/VG.svg) no-repeat
 }
 
 .VI {
-    background: url(/../img/VI.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/VI.svg) no-repeat
 }
 
 .VN {
-    background: url(/../img/VN.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/VN.svg) no-repeat
 }
 
 .VU {
-    background: url(/../img/VU.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/VU.svg) no-repeat
 }
 
 .WF {
-    background: url(/../img/WF.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/WF.svg) no-repeat
 }
 
 .WS {
-    background: url(/../img/WS.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/WS.svg) no-repeat
 }
 
 .XK {
-    background: url(/../img/XK.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/XK.svg) no-repeat
 }
 
 .YE {
-    background: url(/../img/YE.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/YE.svg) no-repeat
 }
 
 .YT {
-    background: url(/../img/YT.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/YT.svg) no-repeat
 }
 
 .ZA {
-    background: url(/../img/ZA.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/ZA.svg) no-repeat
 }
 
 .ZM {
-    background: url(/../img/ZM.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/ZM.svg) no-repeat
 }
 
 .ZW {
-    background: url(/../img/ZW.svg) no-repeat
+    background: url(/io/surati/gap/web/base/img/ZW.svg) no-repeat
 }
 
 /*!
@@ -35980,7 +35980,7 @@ button.toast-close-button {
 }
 
 .slick-loading .slick-list {
-    background: #fff slick-image-url(/../img/ajaxloader.gif) center center no-repeat
+    background: #fff slick-image-url(/io/surati/gap/web/base/img/ajaxloader.gif) center center no-repeat
 }
 
 .slick-prev,
@@ -38244,8 +38244,8 @@ div.fixed-table-scroll-outer {
 
 @font-face {
     font-family: 'Linearicons-Free';
-    src: url(/../img/LineariconsFree.eot);
-    src: url(/../img/LineariconsFree.eot?#iefixw118d) format("embedded-opentype"), url(/../img/LineariconsFree.woff2) format("woff2"), url(/../img/LineariconsFree.woff) format("woff"), url(/../img/LineariconsFree.ttf) format("truetype"), url(/../img/LineariconsFree.svg#Linearicons-Free) format("svg");
+    src: url(/io/surati/gap/web/base/img/LineariconsFree.eot);
+    src: url(/io/surati/gap/web/base/img/LineariconsFree.eot?#iefixw118d) format("embedded-opentype"), url(/io/surati/gap/web/base/img/LineariconsFree.woff2) format("woff2"), url(/io/surati/gap/web/base/img/LineariconsFree.woff) format("woff"), url(/io/surati/gap/web/base/img/LineariconsFree.ttf) format("truetype"), url(/io/surati/gap/web/base/img/LineariconsFree.svg#Linearicons-Free) format("svg");
     font-weight: normal;
     font-style: normal
 }
@@ -38946,8 +38946,8 @@ div.fixed-table-scroll-outer {
 
 @font-face {
     font-family: 'Pe-icon-7-stroke';
-    src: url(/../img/Pe-icon-7-stroke.eot);
-    src: url(/../img/Pe-icon-7-stroke.eot?#iefixd7yf1v) format("embedded-opentype"), url(/../img/Pe-icon-7-stroke.woff) format("woff"), url(/../img/Pe-icon-7-stroke.ttf) format("truetype"), url(/../img/Pe-icon-7-stroke.svg#Pe-icon-7-stroke) format("svg");
+    src: url(/io/surati/gap/web/base/img/Pe-icon-7-stroke.eot);
+    src: url(/io/surati/gap/web/base/img/Pe-icon-7-stroke.eot?#iefixd7yf1v) format("embedded-opentype"), url(/io/surati/gap/web/base/img/Pe-icon-7-stroke.woff) format("woff"), url(/io/surati/gap/web/base/img/Pe-icon-7-stroke.ttf) format("truetype"), url(/io/surati/gap/web/base/img/Pe-icon-7-stroke.svg#Pe-icon-7-stroke) format("svg");
     font-weight: normal;
     font-style: normal
 }
