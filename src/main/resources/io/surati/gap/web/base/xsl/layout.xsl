@@ -606,13 +606,13 @@ SOFTWARE.
             </div>
           </div>
         </div>
-        <script src="/js/jquery-3.5.1.min.js"/>
-        <script src="/js/jquery-ui-1.13.1.min.js"/>
-        <script src="/js/toastr-2.1.4.min.js"/>
-        <script src="/js/popper-1.6.1.min.js"/>
-        <script src="/js/angular-1.6.4.min.js"/>
-        <script src="/js/main.js"/>
-        <script src="/js/ui-bootstrap-tpls-3.0.4.min.js"/>
+        <script src="/io/surati/gap/web/base/js/jquery-3.5.1.min.js"/>
+        <script src="/io/surati/gap/web/base/js/jquery-ui-1.13.1.min.js"/>
+        <script src="/io/surati/gap/web/base/js/toastr-2.1.4.min.js"/>
+        <script src="/io/surati/gap/web/base/js/popper-1.6.1.min.js"/>
+        <script src="/io/surati/gap/web/base/js/angular-1.6.4.min.js"/>
+        <script src="/io/surati/gap/web/base/js/main.js"/>
+        <script src="/io/surati/gap/web/base/js/ui-bootstrap-tpls-3.0.4.min.js"/>
         <script type="text/javascript"><![CDATA[
 		    	if (!String.prototype.format) {
 		    		String.prototype.format = function() {

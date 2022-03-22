@@ -37,7 +37,7 @@ SOFTWARE.
           </article>
         </section>
       </body>
-      <script src="/js/main.js"/>
+      <script src="/io/surati/gap/web/base/js/main.js"/>
     </html>
   </xsl:template>
 </xsl:stylesheet>
