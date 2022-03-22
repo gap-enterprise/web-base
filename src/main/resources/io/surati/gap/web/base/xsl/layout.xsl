@@ -20,7 +20,7 @@ SOFTWARE.
   <xsl:include href="/org/takes/rs/xe/memory.xsl"/>
   <xsl:include href="/org/takes/rs/xe/millis.xsl"/>
   <xsl:include href="/org/takes/facets/flash/flash.xsl"/>
-  <xsl:include href="/xsl/components.xsl"/>
+  <xsl:include href="/io/surati/gap/web/base/xsl/components.xsl"/>
   <xsl:function name="sec:hasAccess" as="xs:boolean">
     <xsl:param name="nodes"/>
     <xsl:param name="access" as="xs:string"/>
@@ -34,9 +34,9 @@ SOFTWARE.
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="msapplication-tap-highlight" content="no"/>
-        <link rel="shortcut icon" href="/img/logo.ico"/>
-        <link rel="stylesheet" href="/css/style.css"/>
-        <link rel="stylesheet" href="/css/custom.css"/>
+        <link rel="shortcut icon" href="/io/surati/gap/web/base/img/logo.ico"/>
+        <link rel="stylesheet" href="/io/surati/gap/web/base/css/style.css"/>
+        <link rel="stylesheet" href="/io/surati/gap/web/base/css/custom.css"/>
         <xsl:apply-templates select="." mode="head"/>
       </head>
       <body>
