@@ -74,21 +74,14 @@ SOFTWARE.
       <artifactId>admin-base</artifactId>
       <version>0.1</version>
     </dependency>
+    <dependency>
+      <groupId>com.baudoliver7</groupId>
+      <artifactId>takes-utils</artifactId>
+      <version>0.3.1</version>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
-      <plugin>
-        <artifactId>maven-failsafe-plugin</artifactId>
-        <configuration>
-          <failIfNoTests>false</failIfNoTests>
-        </configuration>
-      </plugin>
-      <plugin>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <configuration>
-          <failIfNoTests>false</failIfNoTests>
-        </configuration>
-      </plugin>
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>versions-maven-plugin</artifactId>
