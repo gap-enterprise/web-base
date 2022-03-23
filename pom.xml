@@ -34,8 +34,9 @@ SOFTWARE.
   </organization>
   <licenses>
     <license>
-      <name>MIT License</name>
+      <name>private</name>
       <url>https://github.com/gap-enterprise/web-base/blob/master/LICENSE.txt</url>
+      <distribution>site</distribution>
     </license>
   </licenses>
   <developers>
@@ -67,6 +68,11 @@ SOFTWARE.
       <artifactId>takes</artifactId>
       <version>1.19</version>
       <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.surati.gap</groupId>
+      <artifactId>admin-base</artifactId>
+      <version>0.1</version>
     </dependency>
   </dependencies>
   <build>
