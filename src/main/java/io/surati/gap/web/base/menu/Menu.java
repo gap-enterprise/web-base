@@ -29,9 +29,9 @@ public interface Menu {
 
     static Iterable<Menu> menusAuthorized(final User user) {
         final List<Menu> results = new LinkedList<>();
+        final ProfileAccesses useracs = user.profile().accesses();
         for (final Menu menu : Menu.VALUES) {
             final List<Submenu> subauths = new LinkedList<>();
-            final ProfileAccesses useracs = user.profile().accesses();
             for (final Submenu sub : menu.submenus()) {
                 for (final Access acs : sub.accesses()) {
                     if (useracs.has(acs)) {
