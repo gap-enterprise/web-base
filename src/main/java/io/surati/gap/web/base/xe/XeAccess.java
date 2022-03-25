@@ -37,7 +37,7 @@ public final class XeAccess extends XeWrap {
 			new XeDirectives(
 				new Directives()
 				.add(name)
-					.add("id").set(access.name()).up()
+					.add("id").set(access.code()).up()
 					.add("name").set(access.title()).up()
 				.up()
 			)
