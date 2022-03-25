@@ -41,7 +41,7 @@ public final class XeDashboardMenu extends XeWrap {
 						new CleanMap<>()
 							.add("order", item.order())
 							.add("code", item.code())
-							.add("name", item.name())
+							.add("name", item.title())
 							.add("link", item.link())
 					)
 				.up()
