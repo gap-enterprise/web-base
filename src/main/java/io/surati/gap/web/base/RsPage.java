@@ -24,11 +24,17 @@ SOFTWARE.
 package io.surati.gap.web.base;
 
 import com.minlessika.utils.PreviousLocation;
+import io.surati.gap.admin.api.User;
+import io.surati.gap.web.base.menu.Menu;
 import io.surati.gap.web.base.rq.RqUser;
 import io.surati.gap.web.base.xe.XeAccesses;
 import java.io.IOException;
 import java.util.Collections;
+import java.util.Comparator;
+import java.util.stream.Collectors;
 import javax.sql.DataSource;
+
+import io.surati.gap.web.base.xe.XeMenus;
 import org.takes.Request;
 import org.takes.Response;
 import org.takes.Scalar;
@@ -69,10 +75,17 @@ public final class RsPage extends RsWrap {
 	
 	private static Response make(final String xsl, final Request req, final DataSource source, final Scalar<Iterable<XeSource>> src) throws IOException {	
 		final XeSource sec;
-		if(!new RqAuth(req).identity().equals(Identity.ANONYMOUS)) {
-			sec = new XeAccesses("current_user_accesses", new RqUser(source, req).profile().accesses().iterate());
-		} else {
+		if(new RqAuth(req).identity().equals(Identity.ANONYMOUS)) {
 			sec = XeSource.EMPTY;
+		} else {
+			final User user = new RqUser(source, req);
+			sec = new XeChain(
+				new XeAccesses(
+					"current_user_accesses",
+					user.profile().accesses().iterate()
+				),
+				new XeMenus(Menu.menusAuthorized(user))
+			);
 		}
 		final Response raw = new RsXembly(
 			new XeStylesheet(xsl),
