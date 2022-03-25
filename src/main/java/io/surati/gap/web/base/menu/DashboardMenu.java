@@ -18,7 +18,7 @@ public interface DashboardMenu {
 
     String code();
 
-    String name();
+    String title();
 
     String link();
 
@@ -39,4 +39,32 @@ public interface DashboardMenu {
         }
         return results;
     }
+
+    DashboardMenu BLANK = new DashboardMenu() {
+
+        @Override
+        public int order() {
+            return 0;
+        }
+
+        @Override
+        public String code() {
+            return "blank";
+        }
+
+        @Override
+        public String title() {
+            return "Blank dashboard";
+        }
+
+        @Override
+        public String link() {
+            return "javascript:void()";
+        }
+
+        @Override
+        public Iterable<? extends Access> accesses() {
+            return new LinkedList<>();
+        }
+    };
 }
