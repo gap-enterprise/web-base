@@ -81,179 +81,48 @@ SOFTWARE.
                 <ul class="header-megamenu nav">
                   <li class="nav-item">
                     <a href="/home" class="nav-link"><i class="nav-link-icon lnr-apartment"> </i> Accueil
-                                <i class="fa ml-2 opacity-5"/>
-                            </a>
+                      <i class="fa ml-2 opacity-5"/>
+                    </a>
                   </li>
-                  <li class="dropdown nav-item">
-                    <a aria-haspopup="true" data-toggle="dropdown" class="nav-link" aria-expanded="false"><i class="nav-link-icon lnr-diamond"/> Paiements
-                                <i class="fa fa-angle-down ml-2 opacity-5"/>
-                            </a>
-                    <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-rounded dropdown-menu-lg rm-pointers dropdown-menu">
-                      <div class="dropdown-menu-header">
-                        <div class="dropdown-menu-header-inner bg-success">
-                          <div class="menu-header-image opacity-1" style="background-image: url('/io/surati/gap/web/base/img/abstract.jpg');"/>
-                          <div class="menu-header-content text-left">
-                            <h5 class="menu-header-title">Paiements</h5>
-                            <h6 class="menu-header-subtitle">Effectuer vos paiements</h6>
+                  <xsl:for-each select="menus/menu">
+                    <xsl:sort select="order"/>
+                    <li class="dropdown nav-item">
+                      <a aria-haspopup="true" data-toggle="dropdown" class="nav-link" aria-expanded="false">
+                        <i class="nav-link-icon {icon}"/>
+                        <xsl:value-of select="name"/>
+                        <i class="fa fa-angle-down ml-2 opacity-5"/>
+                      </a>
+                      <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-rounded dropdown-menu-lg rm-pointers dropdown-menu">
+                        <div class="dropdown-menu-header">
+                          <div class="dropdown-menu-header-inner {color}">
+                            <div class="menu-header-image opacity-1" style="background-image: url('/io/surati/gap/web/base/img/abstract.jpg');"/>
+                            <div class="menu-header-content text-left">
+                              <h5 class="menu-header-title">
+                                <xsl:value-of select="name"/>
+                              </h5>
+                              <h6 class="menu-header-subtitle">
+                                <xsl:value-of select="description"/>
+                              </h6>
+                            </div>
                           </div>
                         </div>
+                        <xsl:for-each select="submenus/submenu">
+                          <xsl:sort select="order"/>
+                          <xsl:if test="to_separate = 'true'">
+                            <div tabindex="-1" class="dropdown-divider"/>
+                          </xsl:if>
+                          <a href="{link}" tabindex="{position()}" class="dropdown-item">
+                            <i class="dropdown-icon {icon}"/>
+                            <xsl:value-of select="name"/>
+                          </a>
+                        </xsl:for-each>
                       </div>
-                      <xsl:if test="sec:hasAccess(.,'IMPORTER_ORDRES_PAIEMENT')">
-                        <a href="/reference-document/list" tabindex="0" class="dropdown-item"><i class="dropdown-icon lnr-pointer-left"/>Documents de référence à traiter
-	                                </a>
-                      </xsl:if>
-                      <xsl:if test="sec:hasAccess(.,'PREPARER_ORDRES_PAIEMENT') or sec:hasAccess(.,'AUTORISER_ORDRES_PAIEMENT')">
-                        <a href="/payment-order/to-prepare" tabindex="0" class="dropdown-item"><i class="dropdown-icon lnr-pointer-left"/>Ordres de paiement à préparer
-	                                </a>
-                      </xsl:if>
-                      <xsl:if test="sec:hasAccess(.,'EXECUTER_ORDRES_PAIEMENT')">
-                        <a href="/payment/home" tabindex="0" class="dropdown-item"><i class="dropdown-icon lnr-diamond"> </i>Paiements à exécuter
-	                                </a>
-                        <xsl:if test="sec:hasAccess(.,'EXECUTER_ORDRES_PAIEMENT')">
-                          <a href="/payment/export/list" tabindex="0" class="dropdown-item"><i class="dropdown-icon fa fa-upload"> </i>Paiements à exporter
-		                                </a>
-                        </xsl:if>
-                      </xsl:if>
-                      <xsl:if test="sec:hasAccess(.,'VISUALISER_CARNETS') or sec:hasAccess(.,'PREPARER_CARNETS') or sec:hasAccess(.,'METTRE_EN_UTILISATION_CARNETS') or sec:hasAccess(.,'BLOQUER_CARNETS')">
-                        <div tabindex="-1" class="dropdown-divider"/>
-                        <a href="/bank-note-book" tabindex="0" class="dropdown-item"><i class="dropdown-icon lnr-book"> </i>Mes carnets de formule
-	                                </a>
-                      </xsl:if>
-                    </div>
-                  </li>
-                  <li class="dropdown nav-item">
-                    <a aria-haspopup="true" data-toggle="dropdown" class="nav-link" aria-expanded="false"><i class="nav-link-icon lnr-diamond"/> Compte de gestion
-                                <i class="fa fa-angle-down ml-2 opacity-5"/>
-                            </a>
-                    <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-rounded dropdown-menu-lg rm-pointers dropdown-menu">
-                      <div class="dropdown-menu-header">
-                        <div class="dropdown-menu-header-inner bg-success">
-                          <div class="menu-header-image opacity-1" style="background-image: url('/io/surati/gap/web/base/img/abstract.jpg');"/>
-                          <div class="menu-header-content text-left">
-                            <h5 class="menu-header-title">Compte de gestion</h5>
-                            <h6 class="menu-header-subtitle">Suivre l'exécution des dépenses</h6>
-                          </div>
-                        </div>
-                      </div>
-                      <xsl:if test="sec:hasAccess(.,'VISUALISER_DOCUMENTS_A_ENLIASER')">
-                        <a href="/maccount/document-to-bundle/entire/list" tabindex="0" class="dropdown-item"><i class="dropdown-icon lnr-pointer-left"/>Documents non fractionnés à enliasser
-                                </a>
-                        <a href="/maccount/document-to-bundle/partial/list" tabindex="1" class="dropdown-item"><i class="dropdown-icon lnr-pointer-left"/>Documents fractionnés à enliasser
-                                </a>
-                      </xsl:if>
-                      <xsl:if test="sec:hasAccess(.,'CONFIGURER_LIASSES')">
-                        <div tabindex="-1" class="dropdown-divider"/>
-                        <a href="/maccount/bundle" tabindex="0" class="dropdown-item"><i class="dropdown-icon lnr-book"> </i>Configurer les liasses
-                                </a>
-                      </xsl:if>
-                      <xsl:if test="sec:hasAccess(.,'CONFIGURER_TITRES')">
-                        <a href="/maccount/title" tabindex="1" class="dropdown-item"><i class="dropdown-icon lnr-book"> </i>Configurer les titres
-                                </a>
-                      </xsl:if>
-                      <xsl:if test="sec:hasAccess(.,'CONFIGURER_SECTIONS')">
-                        <a href="/maccount/section" tabindex="2" class="dropdown-item"><i class="dropdown-icon lnr-book"> </i>Configurer les sections
-                                </a>
-                      </xsl:if>
-                      <xsl:if test="sec:hasAccess(.,'CONFIGURER_SEUILS_ENLIASSEMENT')">
-                        <a href="/maccount/bundle-threshold/view" tabindex="3" class="dropdown-item"><i class="dropdown-icon lnr-book"> </i>Configurer les seuils d'enliassement
-                                    </a>
-                      </xsl:if>
-                    </div>
-                  </li>
-                  <li class="dropdown nav-item">
-                    <a aria-haspopup="true" data-toggle="dropdown" class="nav-link" aria-expanded="false"><i class="nav-link-icon lnr-history"/> Historique
-                                <i class="fa fa-angle-down ml-2 opacity-5"/>
-                            </a>
-                    <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-rounded dropdown-menu-lg rm-pointers dropdown-menu">
-                      <div class="dropdown-menu-header">
-                        <div class="dropdown-menu-header-inner bg-warning">
-                          <div class="menu-header-image opacity-1" style="background-image: url('/io/surati/gap/web/base/img/abstract.jpg');"/>
-                          <div class="menu-header-content text-left">
-                            <h5 class="menu-header-title">Historique</h5>
-                            <h6 class="menu-header-subtitle">Explorer vos données de production</h6>
-                          </div>
-                        </div>
-                      </div>
-                      <xsl:if test="sec:hasAccess(.,'VISUALISER_ORDRES_PAIEMENT') or sec:hasAccess(.,'PREPARER_ORDRES_PAIEMENT') or sec:hasAccess(.,'AUTORISER_ORDRES_PAIEMENT')">
-                        <a href="/payment-order" tabindex="0" class="dropdown-item"><i class="dropdown-icon lnr-pointer-left"/>Ordres de paiement
-	                                </a>
-                      </xsl:if>
-                      <xsl:if test="sec:hasAccess(.,'VISUALISER_PAIEMENTS')">
-                        <a href="/payment/list" tabindex="0" class="dropdown-item"><i class="dropdown-icon lnr-diamond"> </i>Paiements
-	                                </a>
-                      </xsl:if>
-                      <xsl:if test="sec:hasAccess(.,'VISUALISER_DOCUMENT_REF') or sec:hasAccess(.,'EDITER_DOCUMENT_REF')">
-                        <a href="/reference-document/history" tabindex="0" class="dropdown-item"><i class="dropdown-icon lnr-briefcase"> </i>Documents de référence
-	                                </a>
-                      </xsl:if>
-                    </div>
-                  </li>
-                  <li class="dropdown nav-item">
-                    <a aria-haspopup="true" data-toggle="dropdown" class="nav-link" aria-expanded="false"><i class="nav-link-icon lnr-cog"/> Paramétrage
-                                <i class="fa fa-angle-down ml-2 opacity-5"/>
-                            </a>
-                    <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-rounded dropdown-menu-lg rm-pointers dropdown-menu">
-                      <div class="dropdown-menu-header">
-                        <div class="dropdown-menu-header-inner bg-info">
-                          <div class="menu-header-image opacity-1" style="background-image: url('/io/surati/gap/web/base/img/abstract.jpg');"/>
-                          <div class="menu-header-content text-left">
-                            <h5 class="menu-header-title">Paramétrage</h5>
-                            <h6 class="menu-header-subtitle">Paramétrer vos données de base</h6>
-                          </div>
-                        </div>
-                      </div>
-                      <xsl:if test="sec:hasAccess(.,'VISUALISER_BANQUES') or sec:hasAccess(.,'CONFIGURER_BANQUES')">
-                        <a href="/bank" tabindex="0" class="dropdown-item"><i class="dropdown-icon lnr-apartment"> </i>Banques
-	                                </a>
-                      </xsl:if>
-                      <xsl:if test="sec:hasAccess(.,'VISUALISER_COMPTES_BANCAIRES') or sec:hasAccess(.,'CONFIGURER_COMPTES_BANCAIRES')">
-                        <a href="/bank-account" tabindex="0" class="dropdown-item"><i class="dropdown-icon lnr-inbox"> </i>Mes comptes bancaires
-	                                </a>
-                      </xsl:if>
-                      <xsl:if test="sec:hasAccess(.,'VISUALISER_TIERS') or sec:hasAccess(.,'CONFIGURER_TIERS')">
-                        <a href="/third-party-family" tabindex="0" class="dropdown-item"><i class="dropdown-icon lnr-database"> </i>Familles de tiers
-	                                </a>
-                        <a href="/third-party" tabindex="0" class="dropdown-item"><i class="dropdown-icon lnr-users"> </i>Tiers
-	                                </a>
-                      </xsl:if>
-                    </div>
-                  </li>
-                  <li class="dropdown nav-item">
-                    <a aria-haspopup="true" data-toggle="dropdown" class="nav-link" aria-expanded="false"><i class="nav-link-icon lnr-cog"/> Administration
-                                <i class="fa fa-angle-down ml-2 opacity-5"/>
-                            </a>
-                    <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-rounded dropdown-menu-lg rm-pointers dropdown-menu">
-                      <div class="dropdown-menu-header">
-                        <div class="dropdown-menu-header-inner bg-danger">
-                          <div class="menu-header-image opacity-1" style="background-image: url('/io/surati/gap/web/base/img/abstract.jpg');"/>
-                          <div class="menu-header-content text-left">
-                            <h5 class="menu-header-title">Administration</h5>
-                            <h6 class="menu-header-subtitle">Gérer la sécurité, l'audit, etc.</h6>
-                          </div>
-                        </div>
-                      </div>
-                      <xsl:if test="sec:hasAccess(.,'VISUALISER_UTILISATEURS') or sec:hasAccess(.,'CONFIGURER_UTILISATEURS') or sec:hasAccess(.,'BLOQUER_UTILISATEURS') or sec:hasAccess(.,'CHANGER_MOT_DE_PASSE_UTILISATEURS')">
-                        <a href="/user" tabindex="0" class="dropdown-item"><i class="dropdown-icon lnr-user"> </i>Utilisateurs
-	                                </a>
-                      </xsl:if>
-                      <xsl:if test="sec:hasAccess(.,'VISUALISER_PROFILS') or sec:hasAccess(.,'CONFIGURER_PROFILS')">
-                        <a href="/profile" tabindex="0" class="dropdown-item"><i class="dropdown-icon lnr-license"> </i>Profils
-	                                </a>
-                      </xsl:if>
-                      <xsl:if test="sec:hasAccess(.,'VISUALISER_INFO_ENTREPRISE') or sec:hasAccess(.,'CONFIGURER_INFO_ENTREPRISE')">
-                        <a href="/enterprise" tabindex="0" class="dropdown-item"><i class="dropdown-icon lnr-database"> </i>Entreprise
-	                                </a>
-                      </xsl:if>
-                      <xsl:if test="sec:hasAccess(.,'VISUALISER_LA_JOURNALISATION')">
-                        <a href="/event-log" tabindex="0" class="dropdown-item"><i class="dropdown-icon lnr-layers"> </i>Journalisation
-	                                </a>
-                      </xsl:if>
-                    </div>
-                  </li>
+                    </li>
+                  </xsl:for-each>
                   <li class="nav-item">
                     <a href="javascript:void(0);" class="nav-link"><i class="nav-link-icon lnr-graduation-hat"> </i> Aide
-                                <i class="fa ml-2 opacity-5"/>
-                            </a>
+                      <i class="fa ml-2 opacity-5"/>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -364,178 +233,35 @@ SOFTWARE.
               <div class="scrollbar-sidebar">
                 <div class="app-sidebar__inner">
                   <ul class="vertical-nav-menu">
-                    <li class="app-sidebar__heading">Paiements</li>
-                    <li class="">
-                      <a class="menu-size" href="#"><i class="metismenu-icon lnr-diamond"/> Effectuer vos paiements
-                                    <i class="metismenu-state-icon fa fa-angle-down caret-left"/>
-                                </a>
-                      <ul>
-                        <xsl:if test="sec:hasAccess(.,'IMPORTER_ORDRES_PAIEMENT')">
-                          <li>
-                            <a class="menu-size" href="/reference-document/list"><i class="metismenu-icon"/>Docs de référence à traiter
-                                        </a>
-                          </li>
-                        </xsl:if>
-                        <xsl:if test="sec:hasAccess(.,'PREPARER_ORDRES_PAIEMENT') or sec:hasAccess(.,'AUTORISER_ORDRES_PAIEMENT')">
-                          <li>
-                            <a href="/payment-order/to-prepare" tabindex="0" class="menu-size"><i class="metismenu-icon"/>Ordres paiement à préparer
-		                                </a>
-                          </li>
-                        </xsl:if>
-                        <xsl:if test="sec:hasAccess(.,'EXECUTER_ORDRES_PAIEMENT')">
-                          <li>
-                            <a href="/payment/home" tabindex="0" class="menu-size"><i class="metismenu-icon"> </i>Paiements à exécuter
-	                                </a>
-                          </li>
-                          <xsl:if test="sec:hasAccess(.,'EXECUTER_ORDRES_PAIEMENT')">
+                    <xsl:for-each select="menus/menu">
+                      <li class="app-sidebar__heading">
+                        <xsl:value-of select="name"/>
+                      </li>
+                      <li class="">
+                        <a class="menu-size" href="#">
+                          <i class="metismenu-icon {icon}"/>
+                          <xsl:value-of select="description"/>
+                          <i class="metismenu-state-icon fa fa-angle-down caret-left"/>
+                        </a>
+                        <ul>
+                          <xsl:for-each select="submenus/submenu">
+                            <xsl:if test="to_separate = 'true'">
+                              <div tabindex="-1" class="dropdown-divider"/>
+                            </xsl:if>
                             <li>
-                              <a href="/payment/export/list" tabindex="0" class="menu-size"><i class="metismenu-icon"> </i>Paiements à exporter
-                                </a>
+                              <a class="menu-size" href="{url}">
+                                <i class="metismenu-icon"/>
+                                <xsl:value-of select="name"/>
+                              </a>
                             </li>
-                          </xsl:if>
-                        </xsl:if>
-                        <xsl:if test="sec:hasAccess(.,'VISUALISER_CARNETS') or sec:hasAccess(.,'PREPARER_CARNETS') or sec:hasAccess(.,'METTRE_EN_UTILISATION_CARNETS') or sec:hasAccess(.,'BLOQUER_CARNETS')">
-                          <div tabindex="-1" class="dropdown-divider"/>
-                          <li>
-                            <a href="/bank-note-book" tabindex="0" class="menu-size"><i class="metismenu-icon"> </i>Mes carnets de formule
-                                </a>
-                          </li>
-                        </xsl:if>
-                      </ul>
-                    </li>
-                    <li class="app-sidebar__heading">Compte de gestion</li>
-                    <li class="">
-                      <a class="menu-size" href="#"><i class="metismenu-icon lnr-diamond"/> Suivre l'exécution des dépenses
-                                    <i class="metismenu-state-icon fa fa-angle-down caret-left"/>
-                                </a>
-                      <ul>
-                        <li>
-                          <a class="menu-size" href="/maccount/document-to-bundle/entire/list"><i class="metismenu-icon"/>Documents non fractionnés à enliasser
-                                        </a>
-                        </li>
-                        <li>
-                          <a class="menu-size" href="/maccount/document-to-bundle/partial/list"><i class="metismenu-icon"/>Documents fractionnés à enliasser
-                                        </a>
-                        </li>
-                        <xsl:if test="sec:hasAccess(.,'CONFIGURER_LIASSES')">
-                          <div tabindex="-1" class="dropdown-divider"/>
-                          <li>
-                            <a href="/maccount/bundle" tabindex="0" class="menu-size"><i class="metismenu-icon"> </i> Configurer les liasses
-                                        </a>
-                          </li>
-                        </xsl:if>
-                        <xsl:if test="sec:hasAccess(.,'CONFIGURER_TITRES')">
-                          <li>
-                            <a href="/maccount/title" tabindex="1" class="menu-size"><i class="metismenu-icon"> </i> Configurer les titres
-                                        </a>
-                          </li>
-                        </xsl:if>
-                        <xsl:if test="sec:hasAccess(.,'CONFIGURER_SECTIONS')">
-                          <li>
-                            <a href="/maccount/section" tabindex="2" class="menu-size"><i class="metismenu-icon"> </i> Configurer les sections
-                                        </a>
-                          </li>
-                        </xsl:if>
-                        <xsl:if test="sec:hasAccess(.,'CONFIGURER_SEUILS_ENLIASSEMENT')">
-                          <li>
-                            <a href="/maccount/bundle-threshold/view" tabindex="3" class="menu-size"><i class="metismenu-icon"> </i> Configurer les seuils d'enliassement
-                                            </a>
-                          </li>
-                        </xsl:if>
-                      </ul>
-                    </li>
-                    <li class="app-sidebar__heading"> Historique</li>
-                    <li>
-                      <a class="menu-size" href="#"><i class="metismenu-icon lnr-history"/> Explorer données production
-                                    <i class="metismenu-state-icon fa fa-angle-down caret-left"/>
-                                </a>
-                      <ul>
-                        <xsl:if test="sec:hasAccess(.,'VISUALISER_ORDRES_PAIEMENT') or sec:hasAccess(.,'PREPARER_ORDRES_PAIEMENT') or sec:hasAccess(.,'AUTORISER_ORDRES_PAIEMENT')">
-                          <li>
-                            <a href="/payment-order" tabindex="0" class="menu-size"><i class="metismenu-icon"/>Ordres de paiement
-	                                </a>
-                          </li>
-                        </xsl:if>
-                        <xsl:if test="sec:hasAccess(.,'VISUALISER_PAIEMENTS')">
-                          <li>
-                            <a href="/payment/list" tabindex="0" class="menu-size"><i class="metismenu-icon"> </i>Paiements
-	                                </a>
-                          </li>
-                        </xsl:if>
-                        <xsl:if test="sec:hasAccess(.,'VISUALISER_DOCUMENT_REF') or sec:hasAccess(.,'EDITER_DOCUMENT_REF')">
-                          <li>
-                            <a href="/reference-document/history" tabindex="0" class="menu-size"><i class="metismenu-icon"> </i>Documents de référence
-	                                </a>
-                          </li>
-                        </xsl:if>
-                      </ul>
-                    </li>
-                    <li class="app-sidebar__heading">Paramétrage</li>
-                    <li>
-                      <a class="menu-size" href="#"><i class="metismenu-icon lnr-cog"/>Paramétrer données de base
-									<i class="metismenu-state-icon fa fa-angle-down caret-left"/>
-                                </a>
-                      <ul>
-                        <xsl:if test="sec:hasAccess(.,'VISUALISER_BANQUES') or sec:hasAccess(.,'CONFIGURER_BANQUES')">
-                          <li>
-                            <a href="/bank" tabindex="0" class="menu-size"><i class="metismenu-icon"> </i>Banques
-	                                </a>
-                          </li>
-                        </xsl:if>
-                        <xsl:if test="sec:hasAccess(.,'VISUALISER_COMPTES_BANCAIRES') or sec:hasAccess(.,'CONFIGURER_COMPTES_BANCAIRES')">
-                          <li>
-                            <a href="/bank-account" tabindex="0" class="menu-size"><i class="metismenu-icon"> </i>Mes comptes bancaires
-	                                </a>
-                          </li>
-                        </xsl:if>
-                        <xsl:if test="sec:hasAccess(.,'VISUALISER_TIERS') or sec:hasAccess(.,'CONFIGURER_TIERS')">
-                          <li>
-                            <a href="/third-party-family" tabindex="0" class="menu-size"><i class="metismenu-icon"> </i>Familles de tiers
-	                                </a>
-                          </li>
-                          <li>
-                            <a href="/third-party" tabindex="0" class="menu-size"><i class="metismenu-icon"> </i>Tiers
-	                                </a>
-                          </li>
-                        </xsl:if>
-                      </ul>
-                    </li>
-                    <li class="app-sidebar__heading">Administration</li>
-                    <li>
-                      <a class="menu-size" href="#"><i class="metismenu-icon lnr-cog"/> Gérer la sécurité, l'audit, etc.
-                                    <i class="metismenu-state-icon fa fa-angle-down caret-left"/>
-                                </a>
-                      <ul>
-                        <xsl:if test="sec:hasAccess(.,'VISUALISER_UTILISATEURS') or sec:hasAccess(.,'CONFIGURER_UTILISATEURS') or sec:hasAccess(.,'BLOQUER_UTILISATEURS') or sec:hasAccess(.,'CHANGER_MOT_DE_PASSE_UTILISATEURS')">
-                          <li>
-                            <a href="/user" tabindex="0" class="menu-size"><i class="metismenu-icon"> </i>Utilisateurs
-	                                </a>
-                          </li>
-                        </xsl:if>
-                        <xsl:if test="sec:hasAccess(.,'VISUALISER_PROFILS') or sec:hasAccess(.,'CONFIGURER_PROFILS')">
-                          <li>
-                            <a href="/profile" tabindex="0" class="menu-size"><i class="metismenu-icon"> </i>Profils
-	                                </a>
-                          </li>
-                        </xsl:if>
-                        <xsl:if test="sec:hasAccess(.,'VISUALISER_INFO_ENTREPRISE') or sec:hasAccess(.,'CONFIGURER_INFO_ENTREPRISE')">
-                          <li>
-                            <a href="/enterprise" tabindex="0" class="menu-size"><i class="metismenu-icon"> </i>Entreprise
-	                                </a>
-                          </li>
-                        </xsl:if>
-                        <xsl:if test="sec:hasAccess(.,'VISUALISER_LA_JOURNALISATION')">
-                          <li>
-                            <a href="/event-log" tabindex="0" class="menu-size"><i class="metismenu-icon"> </i>Journalisation
-	                                </a>
-                          </li>
-                        </xsl:if>
-                      </ul>
-                    </li>
+                          </xsl:for-each>
+                        </ul>
+                      </li>
+                    </xsl:for-each>
                     <li class="app-sidebar__heading">Aide</li>
                     <li>
                       <a href="javascript:void(0);" class="menu-size"><i class="metismenu-icon lnr-graduation-hat"/>Aide
-                                </a>
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -561,9 +287,7 @@ SOFTWARE.
                             <div class="tab-content">
                               <div class="tab-pane active" id="tab-messages-header1" role="tabpanel">
                                 <div class="scroll-area-sm">
-                                  <div class="scrollbar-container">
-                                                           
-                                                        </div>
+                                  <div class="scrollbar-container"/>
                                 </div>
                               </div>
                             </div>
