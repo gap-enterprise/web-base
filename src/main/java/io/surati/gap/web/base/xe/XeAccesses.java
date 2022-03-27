@@ -16,8 +16,8 @@
  */
 package io.surati.gap.web.base.xe;
 
-import io.surati.gap.admin.api.Access;
-import io.surati.gap.admin.api.ProfileAccesses;
+import io.surati.gap.admin.base.api.Access;
+import io.surati.gap.admin.base.api.ProfileAccesses;
 import org.cactoos.iterable.Joined;
 import org.cactoos.iterable.Mapped;
 import org.takes.rs.xe.XeDirectives;

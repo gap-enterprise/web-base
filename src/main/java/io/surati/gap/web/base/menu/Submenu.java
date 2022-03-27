@@ -1,6 +1,6 @@
 package io.surati.gap.web.base.menu;
 
-import io.surati.gap.admin.api.Access;
+import io.surati.gap.admin.base.api.Access;
 
 /**
  * Submenu.

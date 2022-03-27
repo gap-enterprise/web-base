@@ -17,7 +17,7 @@
 package io.surati.gap.web.base.xe;
 
 import com.minlessika.map.CleanMap;
-import io.surati.gap.admin.api.Access;
+import io.surati.gap.admin.base.api.Access;
 import io.surati.gap.web.base.menu.Menu;
 import org.cactoos.iterable.Joined;
 import org.cactoos.iterable.Mapped;
