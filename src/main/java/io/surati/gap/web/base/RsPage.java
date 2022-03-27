@@ -24,7 +24,7 @@ SOFTWARE.
 package io.surati.gap.web.base;
 
 import com.minlessika.utils.PreviousLocation;
-import io.surati.gap.admin.api.User;
+import io.surati.gap.admin.base.api.User;
 import io.surati.gap.web.base.menu.Menu;
 import io.surati.gap.web.base.rq.RqUser;
 import io.surati.gap.web.base.xe.XeAccesses;

@@ -23,7 +23,7 @@ SOFTWARE.
  */
 package io.surati.gap.web.base;
 
-import io.surati.gap.admin.api.User;
+import io.surati.gap.admin.base.api.User;
 import io.surati.gap.web.base.menu.DashboardMenu;
 import io.surati.gap.web.base.rq.RqUser;
 import org.cactoos.list.ListOf;

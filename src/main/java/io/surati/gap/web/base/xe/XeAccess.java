@@ -16,7 +16,7 @@
  */
 package io.surati.gap.web.base.xe;
 
-import io.surati.gap.admin.api.Access;
+import io.surati.gap.admin.base.api.Access;
 import org.takes.rs.xe.XeDirectives;
 import org.takes.rs.xe.XeWrap;
 import org.xembly.Directives;

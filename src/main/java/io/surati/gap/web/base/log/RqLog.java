@@ -16,9 +16,9 @@
  */
 package io.surati.gap.web.base.log;
 
-import io.surati.gap.admin.api.EventLog;
-import io.surati.gap.admin.api.Log;
-import io.surati.gap.admin.db.DbLog;
+import io.surati.gap.admin.base.api.EventLog;
+import io.surati.gap.admin.base.api.Log;
+import io.surati.gap.admin.base.db.DbLog;
 import io.surati.gap.web.base.rq.RqUser;
 import java.io.IOException;
 import javax.sql.DataSource;

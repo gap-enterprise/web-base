@@ -1,8 +1,8 @@
 package io.surati.gap.web.base.menu;
 
-import io.surati.gap.admin.api.Access;
-import io.surati.gap.admin.api.ProfileAccesses;
-import io.surati.gap.admin.api.User;
+import io.surati.gap.admin.base.api.Access;
+import io.surati.gap.admin.base.api.ProfileAccesses;
+import io.surati.gap.admin.base.api.User;
 import java.util.LinkedList;
 import java.util.List;
 

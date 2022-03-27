@@ -16,11 +16,11 @@
  */
 package io.surati.gap.web.base.rq;
 
-import io.surati.gap.admin.api.Profile;
-import io.surati.gap.admin.api.User;
-import io.surati.gap.admin.api.Users;
-import io.surati.gap.admin.db.DbUsers;
-import io.surati.gap.admin.secure.Salt;
+import io.surati.gap.admin.base.api.Profile;
+import io.surati.gap.admin.base.api.User;
+import io.surati.gap.admin.base.api.Users;
+import io.surati.gap.admin.base.db.DbUsers;
+import io.surati.gap.admin.base.secure.Salt;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
