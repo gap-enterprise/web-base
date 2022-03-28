@@ -14,7 +14,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package io.surati.gap.web.base;
+package io.surati.gap.web.base.auth;
 
 import org.takes.Request;
 import org.takes.Response;
