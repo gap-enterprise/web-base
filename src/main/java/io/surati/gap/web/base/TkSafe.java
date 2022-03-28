@@ -19,6 +19,7 @@ import org.takes.rs.RsVelocity;
 import org.takes.rs.RsWithStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.takes.tk.TkWrap;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
@@ -29,12 +30,20 @@ import java.util.logging.Level;
  *
  * @since 0.6
  */
-public class TkSafe {
+public class TkSafe extends TkWrap {
 
     /**
      * Logger.
      */
     private static Logger logger = LoggerFactory.getLogger(TkSafe.class);
+
+    /**
+     * Ctor.
+     * @param take Take to safe
+     */
+    public TkSafe(final Take take) {
+        super(TkSafe.safe(take));
+    }
 
     /**
      * With fallback.
