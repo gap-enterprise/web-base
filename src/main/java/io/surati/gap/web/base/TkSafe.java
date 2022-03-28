@@ -1,6 +1,9 @@
 package io.surati.gap.web.base;
 
 import com.minlessika.utils.PreviousLocation;
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.util.logging.Level;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.takes.Response;
 import org.takes.Take;
@@ -21,10 +24,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.takes.tk.TkWrap;
 
-import java.io.IOException;
-import java.net.HttpURLConnection;
-import java.util.logging.Level;
-
 /**
  * Take that shows a relevant page according to an error occured.
  *
@@ -38,6 +37,7 @@ public class TkSafe extends TkWrap {
     private static Logger logger = LoggerFactory.getLogger(TkSafe.class);
 
     /**
+<<<<<<< HEAD
      * Ctor.
      * @param take Take to safe
      */
@@ -46,6 +46,8 @@ public class TkSafe extends TkWrap {
     }
 
     /**
+=======
+>>>>>>> upstream/master
      * With fallback.
      * @param take Takes
      * @return Safe takes
