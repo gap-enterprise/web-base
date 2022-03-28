@@ -21,10 +21,17 @@ import org.takes.Response;
 import org.takes.Take;
 import org.takes.facets.auth.Identity;
 import org.takes.facets.auth.Pass;
+import org.takes.facets.auth.PsByFlag;
 import org.takes.facets.auth.PsCookie;
 import org.takes.facets.auth.RqWithAuth;
+import org.takes.facets.fork.FkFixed;
+import org.takes.facets.fork.FkParams;
+import org.takes.facets.fork.TkFork;
 import org.takes.misc.Opt;
 import org.takes.rq.RqWithoutHeader;
+import org.takes.tk.TkRedirect;
+
+import java.util.regex.Pattern;
 
 /**
  * Take that authentificates an user.
@@ -56,7 +63,11 @@ public final class TkAuth implements Take {
      * @param pss Pass
      */
     public TkAuth(final Take take, final Pass pss) {
-        this(take, pss, TkAuth.class.getSimpleName());
+        this(
+            take,
+            pss,
+            TkAuth.class.getSimpleName()
+        );
     }
 
     /**
@@ -66,7 +77,14 @@ public final class TkAuth implements Take {
      * @param hdr Header to set
      */
     public TkAuth(final Take take, final Pass pss, final String hdr) {
-        this.origin = take;
+        this.origin = new TkFork(
+            new FkParams(
+                PsByFlag.class.getSimpleName(),
+                Pattern.compile(".+"),
+                new TkRedirect("/login")
+            ),
+            new FkFixed(take)
+        );
         this.pass = pss;
         this.header = hdr;
     }
