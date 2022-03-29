@@ -54,7 +54,7 @@ public final class XeMenu extends XeWrap {
 								item.submenus()
 							)
 						)
-					)
+					).up()
 				.up()
 
 			)
