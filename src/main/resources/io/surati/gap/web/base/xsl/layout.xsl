@@ -85,7 +85,7 @@ SOFTWARE.
                     </a>
                   </li>
                   <xsl:for-each select="menus/menu">
-                    <xsl:sort select="order"/>
+                    <xsl:sort select="order" data-type="number"/>
                     <li class="dropdown nav-item">
                       <a aria-haspopup="true" data-toggle="dropdown" class="nav-link" aria-expanded="false">
                         <i class="nav-link-icon {icon}"/>
@@ -107,7 +107,7 @@ SOFTWARE.
                           </div>
                         </div>
                         <xsl:for-each select="submenus/submenu">
-                          <xsl:sort select="order"/>
+                          <xsl:sort select="order" data-type="number"/>
                           <xsl:if test="to_separate = 'true'">
                             <div tabindex="-1" class="dropdown-divider"/>
                           </xsl:if>
