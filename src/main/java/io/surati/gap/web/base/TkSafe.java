@@ -37,7 +37,6 @@ public class TkSafe extends TkWrap {
     private static Logger logger = LoggerFactory.getLogger(TkSafe.class);
 
     /**
-<<<<<<< HEAD
      * Ctor.
      * @param take Take to safe
      */
@@ -46,8 +45,6 @@ public class TkSafe extends TkWrap {
     }
 
     /**
-=======
->>>>>>> upstream/master
      * With fallback.
      * @param take Takes
      * @return Safe takes
