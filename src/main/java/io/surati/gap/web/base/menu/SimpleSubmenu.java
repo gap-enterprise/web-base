@@ -2,8 +2,6 @@ package io.surati.gap.web.base.menu;
 
 import io.surati.gap.admin.base.api.Access;
 
-import java.util.List;
-
 /**
  * Simple submenu.
  *
@@ -11,6 +9,7 @@ import java.util.List;
  */
 public final class SimpleSubmenu implements Submenu {
 
+    private final String code;
     private final int order;
     private final String icon;
     private final String name;
@@ -19,15 +18,21 @@ public final class SimpleSubmenu implements Submenu {
     private final boolean toseparate;
 
     public SimpleSubmenu(
-        final int order, final String icon, final String name,
+        final int order, final String code, final String icon, final String name,
         final String link, final Iterable<Access> accesses, final boolean toseparate
     ) {
         this.order = order;
+        this.code = code;
         this.icon = icon;
         this.name = name;
         this.link = link;
         this.accesses = accesses;
         this.toseparate = toseparate;
+    }
+
+    @Override
+    public String code() {
+        return this.code;
     }
 
     @Override

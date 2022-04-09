@@ -9,6 +9,8 @@ import io.surati.gap.admin.base.api.Access;
  */
 public interface Submenu {
 
+    String code();
+
     int order();
 
     String icon();
