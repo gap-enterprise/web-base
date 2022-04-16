@@ -80,17 +80,17 @@ SOFTWARE.
               <div class="app-header-left">
                 <ul class="header-megamenu nav">
                   <li class="nav-item">
-                    <a href="/home" class="nav-link"><i class="nav-link-icon lnr-apartment"> </i> Accueil
-                      <i class="fa ml-2 opacity-5"/>
+                    <a href="/home" class="nav-link" style="font-weight: bold;"><i class="nav-link-icon lnr-apartment" style="font-weight: bold;"> </i> Accueil
+                      <i class="fa ml-2 opacity-5" style="font-weight: bold;"/>
                     </a>
                   </li>
                   <xsl:for-each select="menus/menu">
                     <xsl:sort select="order" data-type="number"/>
                     <li class="dropdown nav-item">
-                      <a aria-haspopup="true" data-toggle="dropdown" class="nav-link" aria-expanded="false">
-                        <i class="nav-link-icon {icon}"/>
+                      <a aria-haspopup="true" data-toggle="dropdown" class="nav-link" aria-expanded="false" style="font-weight: bold;">
+                        <i class="nav-link-icon {icon}" style="font-weight: bold;"/>
                         <xsl:value-of select="name"/>
-                        <i class="fa fa-angle-down ml-2 opacity-5"/>
+                        <i class="fa fa-angle-down ml-2 opacity-5" style="font-weight: bold;"/>
                       </a>
                       <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu-rounded dropdown-menu-lg rm-pointers dropdown-menu">
                         <div class="dropdown-menu-header">
@@ -120,8 +120,8 @@ SOFTWARE.
                     </li>
                   </xsl:for-each>
                   <li class="nav-item">
-                    <a href="javascript:void(0);" class="nav-link"><i class="nav-link-icon lnr-graduation-hat"> </i> Aide
-                      <i class="fa ml-2 opacity-5"/>
+                    <a href="javascript:void(0);" class="nav-link" style="font-weight: bold;"><i class="nav-link-icon lnr-graduation-hat" style="font-weight: bold;"> </i> Aide
+                      <i class="fa ml-2 opacity-5" style="font-weight: bold;"/>
                     </a>
                   </li>
                 </ul>
