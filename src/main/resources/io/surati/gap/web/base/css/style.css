@@ -37927,6 +37927,11 @@ div.table-responsive>div.dataTables_wrapper>div.row>div[class^="col-"]:last-chil
     padding-right: 0
 }
 
+.table-sm th,
+.table-sm td {
+    padding: 0 0
+}
+
 .table-lg th,
 .table-lg td {
     padding: 1.1rem .825rem
@@ -43133,8 +43138,7 @@ span.multiselect-native-select select {
 
 .btn-group-xs>.btn,
 .btn-xs {
-    padding: .35rem .4rem .25rem .4rem;
-    font-size: .875rem;
+    padding: .15rem .25rem .15rem .25rem;
     line-height: .5;
     border-radius: .2rem
 }
