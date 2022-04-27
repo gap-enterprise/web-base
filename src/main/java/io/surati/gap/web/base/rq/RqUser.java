@@ -99,8 +99,33 @@ public final class RqUser implements User {
 	}
 
 	@Override
+	public String address() {
+		return this.origin.address();
+	}
+
+	@Override
+	public String pobox() {
+		return this.origin.pobox();
+	}
+
+	@Override
+	public String phone() {
+		return this.origin.phone();
+	}
+
+	@Override
+	public String email() {
+		return this.origin.email();
+	}
+
+	@Override
 	public void update(String name) {
 		this.origin.update(name);
+	}
+
+	@Override
+	public void contacts(String s, String s1, String s2, String s3) {
+		this.origin.contacts(s, s1, s2, s3);
 	}
 
 	@Override
