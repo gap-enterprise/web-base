@@ -36,6 +36,8 @@ public abstract class AbstractTkDashboard implements Take {
      */
     private final String stylesheet;
 
+    private final InClasspath classpath;
+
     /**
      * Ctor.
      *
@@ -44,11 +46,12 @@ public abstract class AbstractTkDashboard implements Take {
      * @param stylesheet Style sheet
      */
     public AbstractTkDashboard(
-        final DataSource src, final DashboardMenu menu, final String stylesheet
+        final DataSource src, final DashboardMenu menu, final String stylesheet, final InClasspath classpath
     ) {
         this.src = src;
         this.menu = menu;
         this.stylesheet = stylesheet;
+        this.classpath = classpath;
     }
 
     protected final Response act(final Request req, final XeSource stats) throws Exception {
@@ -59,6 +62,7 @@ public abstract class AbstractTkDashboard implements Take {
         );
         return new RsPage(
             this.stylesheet,
+            classpath,
             req,
             this.src,
             () -> new Sticky<>(

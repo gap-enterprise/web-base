@@ -65,15 +65,15 @@ import org.takes.rs.xe.XeWhen;
  */
 public final class RsPage extends RsWrap {
 
-	public RsPage(final String xsl, final Request req, final DataSource source, final Scalar<Iterable<XeSource>> src) throws IOException {
-		super(RsPage.make(xsl, req, source, src));
+	public RsPage(final String xsl, final InClasspath classpath, final Request req, final DataSource source, final Scalar<Iterable<XeSource>> src) throws IOException {
+		super(RsPage.make(xsl, classpath, req, source, src));
 	}
 	
-	public RsPage(final String xsl, final Request req, final DataSource source) throws IOException {
-		super(RsPage.make(xsl, req, source, Collections::emptyList));
+	public RsPage(final String xsl, final InClasspath classpath, final Request req, final DataSource source) throws IOException {
+		super(RsPage.make(xsl, classpath, req, source, Collections::emptyList));
 	}
 	
-	private static Response make(final String xsl, final Request req, final DataSource source, final Scalar<Iterable<XeSource>> src) throws IOException {	
+	private static Response make(final String xsl, final InClasspath classpath, final Request req, final DataSource source, final Scalar<Iterable<XeSource>> src) throws IOException {
 		final XeSource sec;
 		if(new RqAuth(req).identity().equals(Identity.ANONYMOUS)) {
 			sec = XeSource.EMPTY;
@@ -120,7 +120,7 @@ public final class RsPage extends RsWrap {
             req,
             new FkTypes(
                 "*/*",
-                new RsXslt(new RsWithType(raw, "text/html"))
+                new RsXslt(new RsWithType(raw, "text/html"), classpath)
             )
         );
 	}
