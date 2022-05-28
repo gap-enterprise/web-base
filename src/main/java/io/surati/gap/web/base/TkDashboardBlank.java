@@ -42,7 +42,8 @@ public final class TkDashboardBlank extends AbstractTkDashboard {
 	public TkDashboardBlank(final DataSource src) {
 		super(
 			src, DashboardMenu.BLANK,
-			"/io/surati/gap/web/base/xsl/dashboard/blank.xsl"
+			"/io/surati/gap/web/base/xsl/dashboard/blank.xsl",
+			new InClasspath(TkDashboardBlank.class)
 		);
 	}
 
