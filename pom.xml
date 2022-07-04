@@ -20,7 +20,7 @@ SOFTWARE.
   <parent>
     <groupId>com.jcabi</groupId>
     <artifactId>parent</artifactId>
-    <version>0.57.2</version>
+    <version>0.58.0</version>
   </parent>
   <groupId>io.surati.gap</groupId>
   <artifactId>web-base</artifactId>
