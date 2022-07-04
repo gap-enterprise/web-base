@@ -63,7 +63,7 @@ SOFTWARE.
     <url>http://github.com/gap-enterprise/web-base/tree/master</url>
   </scm>
   <properties>
-    <log4j.version>2.17.2</log4j.version>
+    <log4j.version>2.18.0</log4j.version>
   </properties>
   <dependencies>
     <dependency>
